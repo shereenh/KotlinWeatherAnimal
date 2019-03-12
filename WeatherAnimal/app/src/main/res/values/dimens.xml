@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="large_block">96dp</dimen>
+    <dimen name="large_margin"></dimen>
+
+    <dimen name="grid_height">240dp</dimen>
+
+    <dimen name="tiny_margin">8dp</dimen>
+</resources>

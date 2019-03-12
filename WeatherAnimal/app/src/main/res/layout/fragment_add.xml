@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:animateLayoutChanges="true"
+              android:orientation="vertical"
+             tools:context=".ui.fragments.AddFragment">
+
+    <Button android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/addCityButton"
+            android:text="+"
+            android:textStyle="bold"
+            android:textSize="32sp"
+    />
+
+    <AutoCompleteTextView
+            android:id="@+id/city_name"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:hint="@string/place_autocomplete_search_hint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp" />
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cityRecycler"
+                android:background="@color/navy"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/autoRecycler"
+                android:background="@color/white"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

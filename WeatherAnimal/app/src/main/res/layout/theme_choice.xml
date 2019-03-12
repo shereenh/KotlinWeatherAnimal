@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="3"
+            android:rowCount="2">
+
+    <RelativeLayout style="@style/themeGridItem"
+                    android:id="@+id/jungleSelection"
+                    android:layout_row="0"
+                    android:layout_column="0">
+        <ImageView style="@style/themeImageView"
+                   android:src="@drawable/jungle"
+                    />
+
+        <TextView style="@style/themeTextView"
+                  android:id="@+id/jungleText"
+                  android:text="@string/jungle"/>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/themeGridItem"
+                    android:id="@+id/arcticSelection"
+                    android:layout_row="0"
+                    android:layout_column="1">
+        <ImageView style="@style/themeImageView"
+                   android:src="@drawable/arctic"/>
+
+        <TextView style="@style/themeTextView"
+                  android:id="@+id/arcticText"
+                  android:text="@string/arctic"/>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/themeGridItem"
+                    android:id="@+id/desertSelection"
+                    android:layout_row="1"
+                    android:layout_column="0">
+        <ImageView style="@style/themeImageView"
+                   android:src="@drawable/desert"/>
+
+        <TextView style="@style/themeTextView"
+                  android:id="@+id/desertText"
+                  android:text="@string/desert"/>
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/themeGridItem"
+                    android:id="@+id/domesticSelection"
+                    android:layout_row="1"
+                    android:layout_column="1">
+        <ImageView style="@style/themeImageView"
+                   android:src="@drawable/indoor"/>
+
+        <TextView style="@style/themeTextView"
+                  android:id="@+id/domesticText"
+                  android:text="@string/domestic"/>
+    </RelativeLayout>
+
+
+</GridLayout>

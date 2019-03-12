@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/climateMain"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:context=".ui.ClimateActivity"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/cream">
+
+<RelativeLayout
+        android:id="@+id/relativeMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+            android:animateLayoutChanges="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="272dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp"
+            android:id="@+id/linearLayout">
+
+        <include layout="@layout/theme_choice"/>
+    </LinearLayout>
+
+    <ImageView android:layout_below="@id/linearLayout"
+                android:id="@+id/firstDecorator"
+               android:layout_width="match_parent" android:layout_height="18dp"/>
+
+    <FrameLayout
+            android:layout_below="@id/firstDecorator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/grid_height"
+            android:paddingHorizontal="8dp"
+            android:animateLayoutChanges="true"
+            android:id="@+id/frameLayout" >
+
+        <include layout="@layout/animal_line"/>
+
+    </FrameLayout>
+    <Button
+            android:text="@string/let_s_go"
+            android:layout_below="@id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goButton"
+            android:textColor="@color/yellow"
+            android:onClick="changeToMainActivity"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+    />
+    <ImageView android:layout_width="match_parent" android:layout_height="18dp"
+               android:layout_below="@id/goButton"
+    android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+</ScrollView>
