@@ -28,9 +28,15 @@ class WeatherIconSource {
                 description.contains("cloud") -> clouds
                 description.contains("drizzle") -> drizzle
                 description.contains("fog") -> fog
-                description.contains("drizzle") -> drizzle
                 description.contains("clear") -> clear
+                description.contains("thunder") -> thunder
                 description.contains("snow") -> snow
+                description.contains("rain") -> rain
+                description.contains("lightning") -> lightning
+                description.contains("overcast") -> overcast
+                description.contains("storm") -> storm
+                description.contains("mist") -> fog
+                description.contains("haze") -> fog
                 else -> rainbow
             }
         }

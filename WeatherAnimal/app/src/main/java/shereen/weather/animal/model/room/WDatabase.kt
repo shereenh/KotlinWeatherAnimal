@@ -4,14 +4,17 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import shereen.weather.animal.model.WConstants
 import shereen.weather.animal.model.room.dao.CityDao
 import shereen.weather.animal.model.room.entity.CityEntity
 
 @Database(entities = arrayOf(CityEntity::class), version = 1)
+@TypeConverters(DayConverter::class)
 abstract class WDatabase: RoomDatabase() {
 
     abstract fun cityDao(): CityDao
+//    abstract fun detailDao(): DetailDao
 
     companion object {
         private var INSTANCE: WDatabase? = null

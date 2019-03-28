@@ -7,6 +7,8 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 import org.junit.Assert.*
+import shereen.weather.animal.model.Helper
+import java.util.*
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -21,4 +23,12 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getTargetContext()
         assertEquals("shereen.weather.animal", appContext.packageName)
     }
+
+//    @Test
+//    fun unixToDateTimeTest(){
+//        val now: Date = Date()
+//        val rightNow = now.time / 1000
+//        assertEquals(now, Helper.convertUnixToDateTime(rightNow))
+//
+//    }
 }

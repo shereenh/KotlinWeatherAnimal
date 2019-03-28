@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView android:text="hour"
+              android:layout_centerVertical="true"
+              android:id="@+id/hour"
+              android:textSize="16sp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+    <ImageView
+            android:background="@color/yellow"
+            android:layout_marginHorizontal="50dp"
+            android:id="@+id/hourImg"
+            android:layout_toRightOf="@id/hour"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:id="@+id/hourMin"
+              android:text="-0"
+              android:textSize="16sp"
+              android:layout_marginHorizontal="24dp"
+                android:layout_toLeftOf="@id/hourMax"/>
+
+    <TextView android:id="@+id/hourMax"
+              android:layout_centerVertical="true"
+              android:layout_alignParentEnd="true"
+              android:textSize="16sp"
+            android:layout_marginHorizontal="24dp"
+              android:text="45"
+            android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+</RelativeLayout>

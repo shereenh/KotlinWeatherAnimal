@@ -1,7 +1,7 @@
 package shereen.weather.animal.model.retrofit.entity.simplewea
 
-class Main(temp: Double,
-           pressure: Double,
-           humidity: Double,
-           temp_min: Double,
-           temp_max: Double)
+class Main(val temp: Double,
+           val pressure: Double,
+           val humidity: Double,
+           val temp_min: Double,
+           val temp_max: Double)

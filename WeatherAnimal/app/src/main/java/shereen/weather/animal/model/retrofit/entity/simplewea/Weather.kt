@@ -1,6 +1,6 @@
 package shereen.weather.animal.model.retrofit.entity.simplewea
 
-class Weather(id: Long,
-              main: String,
-              description: String,
-              icon: String)
+class Weather(val id: Long,
+              val main: String,
+              val description: String,
+              val icon: String)

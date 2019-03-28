@@ -5,7 +5,17 @@
     <item
             app:showAsAction="always|collapseActionView"
             android:id="@+id/placeSearch"
-            app:actionViewClass="android.widget.SearchView"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"
             android:title="@string/search_hint"
             android:icon="@android:drawable/ic_menu_search" />
+
+    <item
+            android:id="@+id/refresh"
+            android:title="@string/menu_refresh"
+            app:showAsAction="never"/>
+
+    <item
+            android:id="@+id/delete"
+            android:title="@string/menu_delete_all"
+            app:showAsAction="never"/>
 </menu>

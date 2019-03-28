@@ -32,7 +32,7 @@ class PlacesAPI(val mContext: Context) {
 
     fun autoPredict(input: String) {
         val request = FindAutocompletePredictionsRequest.builder()
-            .setCountry("us")
+//            .setCountry("us")
             .setTypeFilter(TypeFilter.CITIES)
             .setSessionToken(token)
             .setQuery(input)
@@ -45,7 +45,7 @@ class PlacesAPI(val mContext: Context) {
         }.addOnFailureListener { exception ->
             if (exception is ApiException) {
                 Log.e(WConstants.LOGGER, "Place not found: " + exception.statusCode)
-
+               exception.printStackTrace()
             }
         }
     }
@@ -55,6 +55,11 @@ class PlacesAPI(val mContext: Context) {
         for(item in responses){
             placesList.add(item.getFullText(null).toString())
         }
+        mutablePlacesList.value = placesList
+    }
+
+    fun clearList(){
+        placesList.clear()
         mutablePlacesList.value = placesList
     }
 

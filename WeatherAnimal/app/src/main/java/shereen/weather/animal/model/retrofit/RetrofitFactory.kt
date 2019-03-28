@@ -27,7 +27,7 @@ class RetrofitFactory {
             .baseUrl(WConstants.WEATHER_API_BASE)
             .addCallAdapterFactory(CoroutineCallAdapterFactory())
             .addConverterFactory(GsonConverterFactory.create())
-            .client(UnsafeOkHttpClient().getUnsafeOkHttpClient())
+            //.client(UnsafeOkHttpClient().getUnsafeOkHttpClient())
             .build()
         weatherServiceApi = retrofit.create(WeatherService::class.java)
     }

@@ -16,4 +16,6 @@
     <string name="place_autocomplete_search_hint">Type to search</string>
     <string name="google_content_desc">Google Logo</string>
     <string name="search_hint">Search</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_delete_all">Delete All</string>
 </resources>
